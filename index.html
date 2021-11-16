@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artmed</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="js/svg-inject.min.js"></script>
+</head>
+<body>
+  <!--======HEADER======-->
+  <header id="header">
+    <!--======NAVBAR MOBILE======-->
+    <nav class="navbar-mobile">
+      <div class="bx" id="bx"></div>
+      <div class="logo">
+        <a href="">
+          <img src="svg/Artmed black.svg" onload="SVGInject(this)" alt="">
+        </a>
+      </div>
+    </nav>
+    <!--======NAVBAR DESKTOP======-->
+    <nav class="navbar-desktop">
+      <div class="navbar-desktop-item-1">
+        <div class="logo">
+          <a href="">
+            <img src="svg/Artmed black.svg" onload="SVGInject(this)" alt="">
+          </a>
+        </div>
+      </div>
+      
+      <div class="navbar-desktop-item-2">
+        <ul class="menu-desktop">
+          <li class="menu-item"><a href="" class="navlink-desktop">Sobre nós</a></li>
+          <li class="menu-item"><a href="" class="navlink-desktop">Nossas marcas</a></li>
+          <li class="menu-item"><a href="" class="navlink-desktop">Parceiros</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="menu-mobile" id="menu-mobile">
+      <ul class="nav-list-mobile">
+        <li class="mb-1"><a href="" class="nav-link-mobile">Sobre nós</a></li>
+        <li class="mb-1"><a href="" class="nav-link-mobile">Nossas marcas</a></li>
+        <li class="mb-1"><a href="" class="nav-link-mobile">Parceiros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--======HERO======-->
+  <div class="bg-home py-5">
+    <img src="svg/background.svg" class="svg-bg-home" onload="SVGInject(this)" alt="">
+  </div>
+  <main class="container hero py-5">
+    <div class="main-text flex-item-1 pt-5 pb-2 mt-4">
+      <h1 class="mb-2 h1-center">O MAIOR HUB DE EDUCAÇÃO EM SAÚDE DO BRASIL</h1>
+      <p class="my-2 p-color p-center">Aliamos conteúdos de qualidade e alta tecnologia em diferentes soluções 
+        de estudo para acompanhar todos os momentos da sua vida.</p>
+      <div class="btn-d">
+        <a href="" class="btn mt-2">Saiba mais</a>
+      </div>
+    </div>
+    <div class="flex-item-2 flex-center video">
+      <iframe src="https://www.youtube.com/embed/kF2LizUNto4"></iframe>
+    </div>
+  </main>
+
+  <!--======SECTION SOBRE======-->
+  <section class="container flex-column capacitados">
+      <img src="svg/650mil.svg" onload="SVGInject(this)" alt="">
+  </section>
+  <section class="container artmed">
+    <div class="flex-item-1">
+      <h2 class="mb-3">SOBRE A ARTMED</h2>
+      <p class="mt-2">
+        Somos uma marca da +A Educação focada na <span class="bold">produção de conteúdos e tecnologias</span> que visam qualificar 
+        <span class="bold">profissionais de saúde</span> em todas as etapas da sua carreira. 
+        Fundada há quase 50 anos, a Artmed começou como selo editorial e vem ampliando constantemente seu portfólio.
+      </p>
+      <p class="mt-2">
+        <span class="bold">Possui parceria com as principais sociedades científicas e instituições de saúde do Brasil</span>, que atuam como curadoras de conteúdo para levarmos até você informações qualificadas, seguras e relevantes.
+      </p>
+    </div>
+    <div class="flex-item-2 marcas">
+      <img class="" src="svg/Marcas.svg" onload="SVGInject(this)" alt="">
+    </div>
+  </section>
+  <section class="cronologia container">
+      <img src="svg/Cronologia.svg" onload="SVGInject(this)" alt="">
+  </section>
+  <section class="crono-items container flex-column">
+      <div class="crono-1">
+        <img src="svg/crono1.svg" onload="SVGInject(this)" alt="">
+      </div>
+      <div class="crono-2">
+        <img src="svg/crono2.svg" onload="SVGInject(this)" alt="">
+      </div>
+  </section>
+
+
+  <!--======JAVASCRIPT======-->
+  <script src="js/app.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,61 @@
+a {
+  @include typeface-Lato(p2, desktop);
+  text-decoration: none;
+  color: $black;
+  transition: .5s ease;
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+.btn-d {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include responsive(s) {
+    justify-content: center;
+  }
+}
+
+.btn {
+  z-index: 1;
+  position: relative;
+  color: $white;
+  padding: 14px 72px;
+  background-color: none;
+  border: 2px solid $white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+
+  @include responsive(s) {
+    padding: 14px 46px;
+    font-size: 12px;
+  }
+
+  &::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: $white;
+  transform-origin: center;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $black-dark;
+  }
+
+  &:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  }
+}

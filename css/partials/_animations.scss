@@ -1,0 +1,30 @@
+
+.mais {
+  animation: bg-home 3s ease infinite alternate;
+}
+
+.mais_1 {
+  animation: bg-home 2.7s ease infinite alternate;
+}
+
+.mais_2 {
+  animation: bg-home 2.5s ease infinite alternate;
+}
+
+.mais_3 {
+  animation: bg-home 2.3s ease infinite alternate;
+}
+
+.mais_4 {
+  animation: bg-home 2s ease infinite alternate;
+}
+
+@keyframes bg-home {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  
+  100% {
+    transform: translate3d(0,30px,0);
+  }
+}

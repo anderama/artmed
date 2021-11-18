@@ -6,7 +6,7 @@ $container-xxl: 1620px;
 $container-xl: 1440px;
 $container-l: 1140px;
 $container-m: 960px;
-$container-s: 375px;
+$container-s: 325px;
 
 // Mixins
 @mixin responsive($device) {
@@ -151,6 +151,7 @@ $container-s: 375px;
 // HERO
 .hero {
   height: 90vh;
+  position: relative;
 
   @include responsive(s) {
     height: auto;
@@ -190,13 +191,11 @@ $container-s: 375px;
   @include responsive(s) {
     margin: 0;
     padding: 50px 200px;
-    transform: translate3d(0, -130px, 0);
+    transform: translate3d(0, -160px, 0);
   }
   
   @include responsive(xs) {
-    margin: 0;
-    padding: 50px 200px;
-    transform: translate3d(0, -155px, 0);
+    display: none;
   }
 
   iframe {
@@ -249,45 +248,43 @@ $container-s: 375px;
 }
 
 .capacitados {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   @include responsive(xxl) {
     width: 40%;
-    transform: translate3d(0,-120px,0);
   }
 
   @include responsive(s) {
     width: 80%;
-    transform: translate3d(0,-370px,0);
   }
   
   @include responsive(xs) {
     width: 75%;
-    transform: translate3d(0,-435px,0);
   }
   
   @include responsive(l) {
     width: 35%;
-    transform: translate3d(0,-260px,0);
   }
 
   @include responsive(xl) {
     width: 35%;
-    transform: translate3d(0,-135px,0);
   }
 }
 
 .artmed {
-  margin-top: -250px;
+  margin-top: 144px;
 
   @include responsive(s) {
-    transform: translate3d(0,-180px,0);
-  }
+    margin: 0;
 
-  @include responsive(xs) {
-    transform: translate3d(0,-200px,0);
+    transform: translate3d(0,-100px,0);
   }
 }
 
-.marcas {
+.logomarcas {
   width: auto;
 
   svg {
@@ -320,16 +317,25 @@ $container-s: 375px;
   
   @include responsive(s) {
     display: block;
-    transform: translate3d(0,-400px,0);
+    margin-top: -180px;
   }
 }
 
-.bg-second {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+.marcas {
   background-color: $background-2;
 
-  position: absolute;
-  z-index: -1;
+  h3 {
+    color: $white;
+    letter-spacing: 2px;
+  }
+}
+
+.content {
+  p {
+    color: $white;
+  }
+}
+
+.jaleko {
+  width: 15%;
 }

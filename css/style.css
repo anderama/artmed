@@ -374,8 +374,125 @@
   color: #E1EDF3;
 }
 
-.jaleko {
-  width: 15%;
+.accordion-logo {
+  width: 10%;
+  height: 72px;
+}
+
+@media screen and (max-width: 960px) {
+  .accordion-logo {
+    width: 25%;
+    height: 42px;
+  }
+}
+
+.accordion-large {
+  width: 12%;
+  height: 72px;
+}
+
+@media screen and (max-width: 960px) {
+  .accordion-large {
+    width: 30%;
+    height: 42px;
+  }
+}
+
+.accordion {
+  width: auto;
+  margin-top: -100px;
+}
+
+@media screen and (max-width: 960px) {
+  .accordion {
+    margin: 0;
+  }
+}
+
+.accordion .contentBx {
+  position: relative;
+  margin: 10x 20px;
+  width: 1100px;
+}
+
+@media screen and (max-width: 960px) {
+  .accordion .contentBx {
+    width: auto;
+  }
+}
+
+.accordion .contentBx .label {
+  position: relative;
+  padding: 10px;
+  background: #4A4A4A;
+  cursor: pointer;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.accordion .contentBx .label::before {
+  content: '+';
+  position: absolute;
+  top: 40%;
+  right: 30px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #81ECEC;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.accordion .contentBx .label::after {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(127.44deg, #19D4F0 -15.4%, #2BABB3 100%);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  top: 100%;
+}
+
+.accordion .contentBx .label:hover::after {
+  width: 100%;
+}
+
+.accordion .contentBx .content {
+  position: relative;
+  margin-bottom: 16px;
+  background: #4A4A4A;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+.accordion .contentBx .content p {
+  width: 70%;
+  padding: 16px;
+  background-color: #3B3A3A;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .accordion .contentBx .content p {
+    width: auto;
+  }
+}
+
+.accordion .contentBx.active-accordion .content {
+  height: auto;
+  padding: 16px;
+}
+
+.accordion .contentBx.active-accordion .label::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 h1 {

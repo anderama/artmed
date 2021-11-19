@@ -472,7 +472,6 @@
 .accordion .contentBx .content p {
   width: 70%;
   padding: 16px;
-  background-color: #3B3A3A;
   border-radius: 10px;
   text-align: center;
 }
@@ -486,6 +485,11 @@
 .accordion .contentBx.active-accordion .content {
   height: auto;
   padding: 16px;
+  background: #3B3A3A;
+}
+
+.accordion .contentBx.active-accordion .label {
+  background: #3B3A3A;
 }
 
 .accordion .contentBx.active-accordion .label::before {
@@ -493,41 +497,6 @@
           transform: rotate(45deg);
   -webkit-transition: .5s ease;
   transition: .5s ease;
-}
-
-.timeline {
-  margin-top: -80px;
-}
-
-.timeline .estudante {
-  -webkit-transform: translate3d(-30px, 0, 0);
-          transform: translate3d(-30px, 0, 0);
-}
-
-.timeline .residente {
-  -webkit-transform: translate3d(16px, 0, 0);
-          transform: translate3d(16px, 0, 0);
-}
-
-.timeline .especialista {
-  -webkit-transform: translate3d(16px, 0, 0);
-          transform: translate3d(16px, 0, 0);
-}
-
-@media screen and (max-width: 960px) {
-  .timeline {
-    display: none;
-  }
-}
-
-.timeline h4 {
-  text-align: center;
-}
-
-.timeline-svg {
-  width: 85%;
-  -webkit-transform: translate3d(-15px, 30px, 0);
-          transform: translate3d(-15px, 30px, 0);
 }
 
 h1 {

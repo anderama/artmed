@@ -112,7 +112,7 @@ h3 {
 }
 
 h4 {
-  color: $black-dark;
+  color: $white;
   @include typeface-Poppins(h4, desktop);
 
   @include responsive(s) {

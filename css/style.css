@@ -499,6 +499,52 @@
   transition: .5s ease;
 }
 
+.conhecer-btn {
+  z-index: 1;
+  position: relative;
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #161617;
+  padding: 0.5em 1em;
+  outline: none;
+  border-radius: 6px;
+  background-color: #81ECEC;
+  overflow: hidden;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+.conhecer-btn::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #3cefff;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+          transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.45s ease-in-out;
+  transition: -webkit-transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+}
+
+.conhecer-btn:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+.conhecer-btn:hover::before {
+  -webkit-transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+          transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}
+
 h1 {
   color: #E1EDF3;
   font-family: 'Poppins', sans-serif;

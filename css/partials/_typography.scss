@@ -1,7 +1,7 @@
 // Project typography
 
-@mixin typeface-Alata($size: h1, $device: desktop) {
-  font-family: 'Alata', sans-serif;
+@mixin typeface-Poppins($size: h1, $device: desktop) {
+  font-family: 'Poppins', sans-serif;
 
   // H1
   @if $size == h1 and $device == desktop {
@@ -74,10 +74,10 @@
 
 h1 {
   color: $white;
-  @include typeface-Alata(h1, desktop);
+  @include typeface-Poppins(h1, desktop);
 
   @include responsive(s) {
-    @include typeface-Alata(h1, mobile);
+    @include typeface-Poppins(h1, mobile);
   }
 }
 
@@ -95,28 +95,28 @@ h1 {
 
 h2 {
   color: $black-dark;
-  @include typeface-Alata(h2, desktop);
+  @include typeface-Poppins(h2, desktop);
 
   @include responsive(s) {
-    @include typeface-Alata(h2, mobile);
+    @include typeface-Poppins(h2, mobile);
   }
 }
 
 h3 {
   color: $black-dark;
-  @include typeface-Alata(h3, desktop);
+  @include typeface-Poppins(h3, desktop);
 
   @include responsive(s) {
-    @include typeface-Alata(h3, mobile);
+    @include typeface-Poppins(h3, mobile);
   }
 }
 
 h4 {
   color: $black-dark;
-  @include typeface-Alata(h4, desktop);
+  @include typeface-Poppins(h4, desktop);
 
   @include responsive(s) {
-    @include typeface-Alata(h4, mobile);
+    @include typeface-Poppins(h4, mobile);
   }
 }
 
@@ -128,10 +128,10 @@ h5 {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 
-  @include typeface-Alata(h5, desktop);
+  @include typeface-Poppins(h5, desktop);
 
   @include responsive(s) {
-    @include typeface-Alata(h5, mobile);
+    @include typeface-Poppins(h5, mobile);
   }
 }
 

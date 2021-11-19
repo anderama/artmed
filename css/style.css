@@ -497,14 +497,14 @@
 
 h1 {
   color: #E1EDF3;
-  font-family: 'Alata', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 5.4rem;
   line-height: 120%;
 }
 
 @media screen and (max-width: 960px) {
   h1 {
-    font-family: 'Alata', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 3.6rem;
     line-height: 120%;
   }
@@ -524,14 +524,14 @@ h1 {
 
 h2 {
   color: #161617;
-  font-family: 'Alata', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 5.2rem;
   line-height: 100%;
 }
 
 @media screen and (max-width: 960px) {
   h2 {
-    font-family: 'Alata', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 3.6rem;
     line-height: 120%;
   }
@@ -539,14 +539,14 @@ h2 {
 
 h3 {
   color: #161617;
-  font-family: 'Alata', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 3.6rem;
   line-height: 120%;
 }
 
 @media screen and (max-width: 960px) {
   h3 {
-    font-family: 'Alata', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.4rem;
     line-height: 120%;
   }
@@ -554,14 +554,14 @@ h3 {
 
 h4 {
   color: #161617;
-  font-family: 'Alata', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.4rem;
   line-height: 130%;
 }
 
 @media screen and (max-width: 960px) {
   h4 {
-    font-family: 'Alata', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     line-height: 130%;
   }
@@ -574,14 +574,14 @@ h5 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  font-family: 'Alata', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   line-height: 150%;
 }
 
 @media screen and (max-width: 960px) {
   h5 {
-    font-family: 'Alata', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     line-height: 150%;
   }
@@ -1290,7 +1290,7 @@ header {
 
 .nav-link-mobile {
   display: inline-block;
-  font-family: 'Alata', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 3.6rem;
   line-height: 120%;
   color: #454446;

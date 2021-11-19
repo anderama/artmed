@@ -216,7 +216,7 @@ header {
 
 .nav-link-mobile {
   display: inline-block;
-  @include typeface-Alata(h3, desktop);
+  @include typeface-Poppins(h3, desktop);
   color: $gray-1;
 
   padding: 16px 24px;

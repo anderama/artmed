@@ -514,3 +514,149 @@ $container-s: 325px;
     transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
   }
 }
+
+.curadoria {
+  background: url(../svg/bg-blur.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include responsive(s) {
+  background: url(../svg/bg-blur-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  h5 {
+    -webkit-text-fill-color: $primary-green;
+  }
+
+  h3 {
+    color: $white;
+  }
+}
+
+.professores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include responsive(s) {
+    flex-direction: column;
+  }
+}
+
+.professores-reverse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include responsive(s) {
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+.cargo {
+  background-color: $white;
+  width: 400px;
+  height: 170px;
+
+  border-radius: 0 10px 10px 0;
+
+  .title {
+    margin: 52px 0 0 52px;
+    color: $black-dark;
+    font-weight: bold;
+
+    @include responsive(s) {
+      margin: 16px 0 0 16px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  .ocupation {
+    margin: 0 0 0 52px;
+
+    @include responsive(s) {
+      margin: 0px 0 0 16px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  .connection {
+    margin: 0 0 0 52px;
+
+    @include responsive(s) {
+      margin: 0px 0 0 16px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  @include responsive(s) {
+    border-radius: 0 0 10px 10px;
+    width: 70%;
+    height: 100px;
+  }
+}
+
+.cargo-reverse {
+  background-color: $white;
+  width: 400px;
+  height: 170px;
+
+  border-radius: 10px 0 0 10px;
+
+  .title {
+    margin: 52px 0 0 52px;
+    color: $black-dark;
+    font-weight: bold;
+
+    @include responsive(s) {
+      margin: 16px 0 0 16px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  .ocupation {
+    margin: 0 0 0 52px;
+
+    @include responsive(s) {
+      margin: 0px 0 0 16px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  .connection {
+    margin: 0 0 0 52px;
+
+    @include responsive(s) {
+      margin: 0px 0 0 16px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  @include responsive(s) {
+    border-radius: 0 0 10px 10px;
+    width: 70%;
+    height: 100px;
+  }
+}
+
+.curadoria-item {
+  @include responsive(s) {
+    flex: 1 1 0px;
+  }
+}

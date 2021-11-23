@@ -191,7 +191,7 @@ $container-s: 325px;
   @include responsive(s) {
     margin: 0;
     padding: 50px 200px;
-    transform: translate3d(0, -160px, 0);
+    transform: translate3d(0, -110px, 0);
   }
   
   @include responsive(xs) {

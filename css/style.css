@@ -765,6 +765,63 @@
   }
 }
 
+.frame {
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.frame:hover {
+  opacity: 0.8;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 90%;
+  height: 80%;
+  margin: 15vh auto;
+  position: relative;
+}
+
+@media screen and (max-width: 960px) {
+  .modal {
+    width: 80%;
+    height: 80%;
+    margin: 16vh auto;
+  }
+}
+
+.modal .close-modal {
+  color: black;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+/* === MODAL.ACTIVE === */
+.modal-overlay.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+}
+
 h1 {
   color: #E1EDF3;
   font-family: 'Poppins', sans-serif;

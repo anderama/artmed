@@ -33,3 +33,20 @@ for (let i = 0; i < accordion.length; i++) {
     this.classList.toggle('active-accordion');
   })
 }
+
+//Modal
+const modalOverlay = document.querySelector('.modal-overlay')
+const cards = document.querySelectorAll('.card')
+
+for (let card of cards) {
+    card.addEventListener("click", function(){
+        const videoId = card.getAttribute("id");
+        modalOverlay.classList.add('active-modal')
+        modalOverlay.querySelector("iframe").src = `https://www.youtube.com/embed/${videoId}`
+    })
+}
+
+document.querySelector(".close-modal").addEventListener("click", function() {
+  modalOverlay.classList.remove("active-modal")
+  modalOverlay.querySelector("iframe").src = ""
+})

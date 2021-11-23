@@ -154,7 +154,7 @@ $container-s: 325px;
   position: relative;
 
   @include responsive(s) {
-    height: auto;
+    height: 125vh;
   }
 }
 
@@ -208,7 +208,7 @@ $container-s: 325px;
     @include responsive(s) {
       padding: 24px;
       width: 90%;
-      height: 55%;
+      height: 100%;
     }
   }
 }

@@ -682,6 +682,7 @@ $container-s: 325px;
 
 .modal {
   background-color: white;
+  border-radius: 10px;
   width: 90%;
   height: 80%;
   margin: 15vh auto;
@@ -697,7 +698,7 @@ $container-s: 325px;
 .modal .close-modal {
   color: black;
   position: absolute;
-  top: 8px;
+  top: 4px;
   right: 8px;
   cursor: pointer;
 }
@@ -714,4 +715,12 @@ iframe {
   height:90%;
   position: absolute;
   top: 5%;
+}
+
+.cards {
+  transform: translate3d(0, -70px, 0);
+
+  @include responsive(s) {
+    transform: translate3d(0, 0, 0);
+  }
 }

@@ -26,12 +26,41 @@ showMenu('bx', 'menu-mobile');
 
 // ACCORDION
 
-const accordion = document.getElementsByClassName('contentBx');
+const accordionItems = document.querySelectorAll('.contentBx')
 
-for (let i = 0; i < accordion.length; i++) {
-  accordion[i].addEventListener('click', function(){
-    this.classList.toggle('active-accordion');
-  })
+// 1. Selecionar cada item
+accordionItems.forEach((item) =>{
+    const accordionHeader = item.querySelector('.label')
+
+    // 2. Selecionar cada click do header
+    accordionHeader.addEventListener('click', () =>{
+        // 7. Criar a variável
+        const openItem = document.querySelector('.active-accordion')
+        
+        // 5. Chamar a função toggle item
+        toggleItem(item)
+
+        // 8. Validar se a classe existe
+        if(openItem && openItem!== item){
+            toggleItem(openItem)
+        }
+    })
+})
+
+// 3. Criar uma função do tipo constante
+const toggleItem = (item) =>{
+    // 3.1 Criar a variável
+    const accordionContent = item.querySelector('.content')
+
+    // 6. Verificar se existe o elemento com a classe active-accordion 
+    if(item.classList.contains('active-accordion')){
+        accordionContent.removeAttribute('style')
+        item.classList.remove('active-accordion')
+    }else{
+        // 4. Agregar a altura máxima do content
+        accordionContent.style.height = accordionContent.scrollHeight + 'px'
+        item.classList.add('active-accordion')
+    }
 }
 
 //Modal

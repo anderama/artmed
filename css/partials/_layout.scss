@@ -433,7 +433,7 @@ $container-s: 325px;
 
 .accordion .contentBx.active-accordion {
   .content {
-    height: auto;
+    height: auto !important;
     padding: 16px;
     background: #3B3A3A;
   }

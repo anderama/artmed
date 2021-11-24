@@ -486,9 +486,13 @@
   height: auto !important;
   padding: 16px;
   background: #3B3A3A;
+  border: 2px solid #81ECEC;
+  border-top: none;
 }
 
 .accordion .contentBx.active-accordion .label {
+  border: 2px solid #81ECEC;
+  border-bottom: none;
   background: #3B3A3A;
 }
 

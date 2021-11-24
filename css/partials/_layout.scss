@@ -436,9 +436,13 @@ $container-s: 325px;
     height: auto !important;
     padding: 16px;
     background: #3B3A3A;
+    border: 2px solid $secondary-green;
+    border-top: none;
   }
 
   .label {
+    border: 2px solid $secondary-green;
+    border-bottom: none;
     background: #3B3A3A;
     &::before {
       transform: rotate(45deg);

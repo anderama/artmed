@@ -615,6 +615,10 @@ iframe {
   width: 100%;
   margin-top: -80px;
 
+  @include responsive(s) {
+    margin: 0;
+  }
+
   .carousel {
     max-width: 1200px;
     margin: auto;
@@ -627,6 +631,20 @@ iframe {
       border: 3px solid #c7ecee;
       padding: 46px;
       margin: 20px 0;
+
+      .gp-desktop {
+        @include responsive(s) {
+          display: none;
+        }
+      }
+      
+      .gp-mobile {
+        display: none;
+      
+        @include responsive(s) {
+          display: block;
+        }
+      }
     }
   }
 }
@@ -662,5 +680,11 @@ iframe {
     @include responsive(s) {
       width: auto;
     }
+  }
+}
+
+.parceiros {
+  @include responsive(s) {
+    flex: 1 1 0px;
   }
 }

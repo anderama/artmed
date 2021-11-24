@@ -1,0 +1,62 @@
+footer {
+    background: $primary-green;
+}
+
+.footer-items {
+    align-items: flex-start !important;
+}
+
+.weight-normal {
+    font-weight: 500;
+}
+
+.footer-socials, .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        margin-left: 24px;
+    }
+
+    a {
+        color: $white;
+        opacity: 1;
+    }
+}
+
+.copyright {
+    a {
+        font-size: 1.2rem;
+    }
+}
+
+.footer-socials {
+    a {
+        font-size: 1.8rem;
+    }
+}
+
+.artmed-white {
+    width: 140px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    border-top: 2px solid $green-medium;
+
+    padding: 24px;
+
+    @include responsive(s) {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .artmed-white {
+            margin-bottom: 24px;
+        }
+    }
+}

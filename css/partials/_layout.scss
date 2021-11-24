@@ -688,3 +688,19 @@ iframe {
     flex: 1 1 0px;
   }
 }
+
+.list {
+  list-style: none;
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  a {
+    color: $gray-8;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

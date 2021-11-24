@@ -402,6 +402,11 @@ $container-s: 325px;
 
   h3 {
     color: $white;
+    width: 65rem;
+
+    @include responsive(s) {
+      width: auto;
+    }
   }
 }
 
@@ -592,5 +597,70 @@ iframe {
 
   @include responsive(s) {
     transform: translate3d(0, 0, 0);
+  }
+}
+
+.bg-slider {
+  background: $background-2;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  margin-top: -80px;
+
+  .carousel {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+    
+
+    .card-slider {
+      background: #fff;
+      border-radius: 10px;
+      border: 3px solid #c7ecee;
+      padding: 46px;
+      margin: 20px 0;
+    }
+  }
+}
+
+.owl-dots {
+  text-align: center;
+}
+
+.owl-dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  margin: 0 5px;
+  border: 2px solid $green-light-1 !important;
+  transition: 0.3s ease;
+
+  &:hover {
+    background: $green-light-1 !important;
+  }
+
+}
+
+.owl-dot.active {
+  background: $green-light-1 !important;
+}
+
+#parceiros {
+  h3 {
+    width: 60rem;
+
+    @include responsive(s) {
+      width: auto;
+    }
   }
 }

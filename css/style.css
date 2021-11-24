@@ -456,6 +456,13 @@
 
 .curadoria h3 {
   color: #E1EDF3;
+  width: 65rem;
+}
+
+@media screen and (max-width: 960px) {
+  .curadoria h3 {
+    width: auto;
+  }
 }
 
 .professores {
@@ -723,6 +730,76 @@ iframe {
   .cards {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
+  }
+}
+
+.bg-slider {
+  background: #d5f2f6;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  margin-top: -80px;
+}
+
+.wrapper .carousel {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.wrapper .carousel .card-slider {
+  background: #fff;
+  border-radius: 10px;
+  border: 3px solid #c7ecee;
+  padding: 46px;
+  margin: 20px 0;
+}
+
+.owl-dots {
+  text-align: center;
+}
+
+.owl-dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  margin: 0 5px;
+  border: 2px solid #2BABB3 !important;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.owl-dot:hover {
+  background: #2BABB3 !important;
+}
+
+.owl-dot.active {
+  background: #2BABB3 !important;
+}
+
+#parceiros h3 {
+  width: 60rem;
+}
+
+@media screen and (max-width: 960px) {
+  #parceiros h3 {
+    width: auto;
   }
 }
 

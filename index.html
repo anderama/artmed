@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <script src="js/svg-inject.min.js"></script>
 </head>
 <body>
@@ -64,7 +67,7 @@
       <p class="my-2 p-color p-center">Aliamos conteúdos de qualidade e alta tecnologia em diferentes soluções 
         de estudo para acompanhar todos os momentos da sua vida.</p>
       <div class="btn-d">
-        <a href="" class="btn mt-2">Saiba mais</a>
+        <a href="#marcas" class="btn mt-2">Saiba mais</a>
       </div>
     </div>
     <div class="flex-item-2 flex-center video">
@@ -192,15 +195,58 @@
   </div>
   </div>
 
-  <section class="container">
-    <div class="flex-item-1">
-      <h5>INSTITUIÇÕES PARCEIRAS</h5>
-      <h3>QUE INDICAM O QUE E COM QUEM VOCÊ VAI APRENDER</h3>
-    </div>
-  </section>
+  <!--======PARCERIAS======-->
+  <div class="bg-slider">
+    <section class="container" id="parceiros">
+      <div class="flex-item-1">
+        <h5>INSTITUIÇÕES PARCEIRAS</h5>
+        <h3>QUE INDICAM O QUE E COM QUEM VOCÊ VAI APRENDER</h3>
+      </div>
+    </section>
+  
+    <section class="container">
+      <div class="wrapper">
+        <div class="carousel owl-carousel">
+           <div class="card-slider">
+              <img src="img/grupo1.png" alt="">
+           </div>
+           <div class="card-slider">
+              <img src="img/grupo2.png" alt="">
+           </div>
+           <div class="card-slider">
+              <img src="img/grupo3.png" alt="">
+           </div>
+        </div>
+     </div>
+    </section>
+  </div>
 
   <!--======JAVASCRIPT======-->
   <script src="js/app.js"></script>
+
+  <script>
+    $(".carousel").owlCarousel({
+           margin: 20,
+           loop: true,
+           autoplay: true,
+           autoplayTimeout: 5000,
+           autoplayHoverPause: true,
+           responsive: {
+             0:{
+               items:1,
+               nav: false
+             },
+             600:{
+               items:1,
+               nav: false
+             },
+             1000:{
+               items:1,
+               nav: false
+             }
+           }
+         });
+  </script>
   
 </body>
 </html>

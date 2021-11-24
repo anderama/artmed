@@ -36,18 +36,20 @@
       
       <div class="navbar-desktop-item-2">
         <ul class="menu-desktop">
-          <li class="menu-item"><a href="" class="navlink-desktop">Sobre nós</a></li>
-          <li class="menu-item"><a href="" class="navlink-desktop">Nossas marcas</a></li>
-          <li class="menu-item"><a href="" class="navlink-desktop">Parceiros</a></li>
+          <li class="menu-item"><a href="#home" class="navlink-desktop">Home</a></li>
+          <li class="menu-item"><a href="#sobre" class="navlink-desktop">Sobre nós</a></li>
+          <li class="menu-item"><a href="#marcas" class="navlink-desktop">Nossas marcas</a></li>
+          <li class="menu-item"><a href="#parceiros" class="navlink-desktop">Parceiros</a></li>
         </ul>
       </div>
     </nav>
 
     <nav class="menu-mobile" id="menu-mobile">
       <ul class="nav-list-mobile">
-        <li class="mb-1"><a href="" class="nav-link-mobile">Sobre nós</a></li>
-        <li class="mb-1"><a href="" class="nav-link-mobile">Nossas marcas</a></li>
-        <li class="mb-1"><a href="" class="nav-link-mobile">Parceiros</a></li>
+        <li class="mb-1"><a href="#home" class="nav-link-mobile">Home</a></li>
+        <li class="mb-1"><a href="#sobre" class="nav-link-mobile">Sobre nós</a></li>
+        <li class="mb-1"><a href="#marcas" class="nav-link-mobile">Nossas marcas</a></li>
+        <li class="mb-1"><a href="#parceiros" class="nav-link-mobile">Parceiros</a></li>
       </ul>
     </nav>
   </header>
@@ -56,7 +58,7 @@
   <div class="bg-home py-5">
     <img src="svg/background.svg" class="svg-bg-home" onload="SVGInject(this)" alt="">
   </div>
-  <main class="container hero py-5">
+  <main class="container hero py-5" id="home">
     <div class="main-text flex-item-1 pt-5 pb-2 mt-4">
       <h1 class="mb-2 h1-center">O MAIOR HUB DE EDUCAÇÃO EM SAÚDE DO BRASIL</h1>
       <p class="my-2 p-color p-center">Aliamos conteúdos de qualidade e alta tecnologia em diferentes soluções 
@@ -75,7 +77,7 @@
       <img src="svg/650mil.svg" onload="SVGInject(this)" alt="">
   </section>
 
-  <section class="container artmed">
+  <section class="container artmed" id="sobre">
     <div class="flex-item-1">
       <h2 class="mb-3">SOBRE A ARTMED</h2>
       <p class="mt-2">
@@ -106,7 +108,7 @@
   </section>
 
   <!--======SECTION MARCAS======-->
-  <div class="marcas">
+  <div class="marcas" id="marcas">
     <section class="container flex-start">
       <div>
         <h5 class="mb-1">PARA TODOS OS MOMENTOS DA SUA CARREIRA</h5>
@@ -114,25 +116,16 @@
       </div>
     </section>
 
-    <!-- <section class="container flex-center flex-column timeline">
-      <div class="flex-start">
-        <h4 class="mx-5 estudante">ESTUDANTE</h4>
-        <div>
-          <h4 class="mx-5 residente">RESIDENTE</h4>
-          <h4 class="mx-5 residente">PÓS-GRADUANDO</h4>
-        </div>
-        <div>
-          <h4 class="mx-5 especialista">ESPECIALISTA</h4>
-          <h4 class="mx-5 especialista">PÓS-GRADUADO</h4>
-        </div>
+    <section class="container">
+      <div class="marcas-desktop">
+        <img src="svg/nossasMarcasDesk.svg" onload="SVGInject(this)" alt="">
       </div>
 
-      <div class="timeline-svg">
-        <img src="svg/timeline.svg" onload="SVGInject(this)" alt="">
+      <div class="marcas-mobile">
+        <img src="svg/nossasMarcasMob.svg" onload="SVGInject(this)" alt="">
       </div>
-    </section> -->
-
-    <div class="container accordion flex-column">
+    </section>
+    
       <div class="contentBx">
         <div class="label flex-center">
           <img src="svg/jaleko.svg" class="accordion-logo" onload="SVGInject(this)"alt="">
@@ -194,8 +187,10 @@
           <a href="" class="conhecer-btn">CONHECER</a>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
+
+  <!--======CURADORIA======-->
 
   <div class="curadoria">
     <section class="container">

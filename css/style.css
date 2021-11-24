@@ -422,6 +422,8 @@
 }
 
 .accordion .contentBx .label {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
   position: relative;
   padding: 10px;
   background: #4A4A4A;
@@ -459,12 +461,13 @@
 }
 
 .accordion .contentBx .content {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
   position: relative;
   margin-bottom: 16px;
   background: #4A4A4A;
   height: 0;
   overflow: hidden;
-  -webkit-transition: .5s ease;
   transition: .5s ease;
   border-radius: 0 0 10px 10px;
 }
@@ -482,7 +485,14 @@
   }
 }
 
+.accordion .contentBx.active-accordion {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
 .accordion .contentBx.active-accordion .content {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
   height: auto !important;
   padding: 16px;
   background: #3B3A3A;
@@ -491,6 +501,8 @@
 }
 
 .accordion .contentBx.active-accordion .label {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
   border: 2px solid #81ECEC;
   border-bottom: none;
   background: #3B3A3A;

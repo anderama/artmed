@@ -374,6 +374,7 @@ $container-s: 325px;
     }
 
     .label {
+      transition: .5s ease;
       position: relative;
       padding: 10px;
       background: $accordion-bg;
@@ -409,6 +410,7 @@ $container-s: 325px;
     }
 
     .content {
+      transition: .5s ease;
       position: relative;
       margin-bottom: 16px;
       background: $accordion-bg;
@@ -432,7 +434,9 @@ $container-s: 325px;
 }
 
 .accordion .contentBx.active-accordion {
+  transition: .5s ease;
   .content {
+    transition: .5s ease;
     height: auto !important;
     padding: 16px;
     background: #3B3A3A;
@@ -441,6 +445,7 @@ $container-s: 325px;
   }
 
   .label {
+    transition: .5s ease;
     border: 2px solid $secondary-green;
     border-bottom: none;
     background: #3B3A3A;

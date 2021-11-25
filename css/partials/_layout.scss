@@ -331,6 +331,7 @@ $container-s: 325px;
 
   .marcas-desktop {
     margin-top: -150px;
+    position: relative;
 
     @include responsive(s) {
       display: none;
@@ -338,6 +339,7 @@ $container-s: 325px;
   }
 
   .marcas-mobile {
+    position: relative;
     display: none;
 
     @include responsive(s) {
@@ -703,4 +705,136 @@ iframe {
       opacity: 0.5;
     }
   }
+}
+
+.jaleko {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 40%;
+  left: 13.5%;
+  cursor: pointer;
+
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.editora {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 40%;
+  left: 27.2%;
+  cursor: pointer;
+
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.artmed360 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 40%;
+  left: 40.5%;
+  cursor: pointer;
+
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.secad {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 40%;
+  left: 54.5%;
+  cursor: pointer;
+
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.psi {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 40%;
+  left: 68%;
+  cursor: pointer;
+
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.pos {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 40%;
+  left: 81%;
+  cursor: pointer;
+
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.jaleko-mobile {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 11.5%;
+  left: 40%;
+  cursor: pointer;
+}
+
+.editora-mobile {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 26.5%;
+  left: 40%;
+  cursor: pointer;
+}
+
+.artmed360-mobile {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 41.5%;
+  left: 40%;
+  cursor: pointer;
+}
+
+.secad-mobile {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 56.5%;
+  left: 40%;
+  cursor: pointer;
+}
+
+.psi-mobile {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 71.5%;
+  left: 40%;
+  cursor: pointer;
+}
+
+.pos-mobile {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 86.5%;
+  left: 40%;
+  cursor: pointer;
 }

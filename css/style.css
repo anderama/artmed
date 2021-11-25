@@ -510,20 +510,36 @@
 }
 
 .cargo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #E1EDF3;
   width: 400px;
-  height: 170px;
+  height: 200px;
+  padding: 18px 0;
   border-radius: 0 10px 10px 0;
 }
 
 .cargo .title {
-  margin: 52px 0 0 52px;
+  font-size: 1.8rem;
+  padding: 0 18px;
   color: #161617;
   font-weight: bold;
 }
 
 @media screen and (max-width: 960px) {
   .cargo .title {
+    font-size: 1.6rem;
     margin: 16px 0 0 16px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -538,7 +554,7 @@
 }
 
 .cargo .ocupation {
-  margin: 0 0 0 52px;
+  padding: 0 18px;
 }
 
 @media screen and (max-width: 960px) {
@@ -557,7 +573,7 @@
 }
 
 .cargo .connection {
-  margin: 0 0 0 52px;
+  padding: 0 18px;
 }
 
 @media screen and (max-width: 960px) {
@@ -578,26 +594,42 @@
 @media screen and (max-width: 960px) {
   .cargo {
     border-radius: 0 0 10px 10px;
-    width: 70%;
-    height: 100px;
+    width: 90%;
+    height: 250px;
   }
 }
 
 .cargo-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #E1EDF3;
   width: 400px;
-  height: 170px;
+  height: 200px;
+  padding: 18px 0;
   border-radius: 10px 0 0 10px;
 }
 
 .cargo-reverse .title {
-  margin: 52px 0 0 52px;
+  font-size: 1.8rem;
+  padding: 0 18px;
   color: #161617;
   font-weight: bold;
 }
 
 @media screen and (max-width: 960px) {
   .cargo-reverse .title {
+    font-size: 1.6rem;
     margin: 16px 0 0 16px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -612,7 +644,7 @@
 }
 
 .cargo-reverse .ocupation {
-  margin: 0 0 0 52px;
+  padding: 0 18px;
 }
 
 @media screen and (max-width: 960px) {
@@ -631,7 +663,7 @@
 }
 
 .cargo-reverse .connection {
-  margin: 0 0 0 52px;
+  padding: 0 18px;
 }
 
 @media screen and (max-width: 960px) {
@@ -652,8 +684,8 @@
 @media screen and (max-width: 960px) {
   .cargo-reverse {
     border-radius: 0 0 10px 10px;
-    width: 70%;
-    height: 100px;
+    width: 90%;
+    height: 250px;
   }
 }
 
@@ -1856,6 +1888,11 @@ footer {
 
 .copyright a {
   font-size: 1.2rem;
+}
+
+.copyright p {
+  font-size: 1.2rem;
+  color: #E1EDF3;
 }
 
 .footer-socials a {

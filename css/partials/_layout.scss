@@ -435,18 +435,25 @@ $container-s: 325px;
 
 
 .cargo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
   background-color: $white;
   width: 400px;
-  height: 170px;
+  height: 200px;
+  padding: 18px 0;
 
   border-radius: 0 10px 10px 0;
 
   .title {
-    margin: 52px 0 0 52px;
+    font-size: 1.8rem;
+    padding: 0 18px;
     color: $black-dark;
     font-weight: bold;
 
     @include responsive(s) {
+      font-size: 1.6rem;
       margin: 16px 0 0 16px;
       display: flex;
       justify-content: flex-start;
@@ -455,7 +462,7 @@ $container-s: 325px;
   }
 
   .ocupation {
-    margin: 0 0 0 52px;
+    padding: 0 18px;
 
     @include responsive(s) {
       margin: 0px 0 0 16px;
@@ -466,7 +473,7 @@ $container-s: 325px;
   }
 
   .connection {
-    margin: 0 0 0 52px;
+    padding: 0 18px;
 
     @include responsive(s) {
       margin: 0px 0 0 16px;
@@ -478,24 +485,31 @@ $container-s: 325px;
 
   @include responsive(s) {
     border-radius: 0 0 10px 10px;
-    width: 70%;
-    height: 100px;
+    width: 90%;
+    height: 250px;
   }
 }
 
 .cargo-reverse {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
   background-color: $white;
   width: 400px;
-  height: 170px;
+  height: 200px;
+  padding: 18px 0;
 
   border-radius: 10px 0 0 10px;
 
   .title {
-    margin: 52px 0 0 52px;
+    font-size: 1.8rem;
+    padding: 0 18px;
     color: $black-dark;
     font-weight: bold;
 
     @include responsive(s) {
+      font-size: 1.6rem;
       margin: 16px 0 0 16px;
       display: flex;
       justify-content: flex-start;
@@ -504,7 +518,7 @@ $container-s: 325px;
   }
 
   .ocupation {
-    margin: 0 0 0 52px;
+    padding: 0 18px;
 
     @include responsive(s) {
       margin: 0px 0 0 16px;
@@ -515,7 +529,7 @@ $container-s: 325px;
   }
 
   .connection {
-    margin: 0 0 0 52px;
+    padding: 0 18px;
 
     @include responsive(s) {
       margin: 0px 0 0 16px;
@@ -527,8 +541,8 @@ $container-s: 325px;
 
   @include responsive(s) {
     border-radius: 0 0 10px 10px;
-    width: 70%;
-    height: 100px;
+    width: 90%;
+    height: 250px;
   }
 }
 

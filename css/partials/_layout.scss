@@ -162,6 +162,7 @@ $container-s: 325px;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background: url(../img/background.jpg);
 
   position: absolute;
   z-index: -1;
@@ -203,6 +204,7 @@ $container-s: 325px;
     border: none;
     width: 80%;
     height: 90%;
+    border-radius: 10px;
 
   
     @include responsive(s) {
@@ -214,6 +216,9 @@ $container-s: 325px;
 }
 
 .mais {
+  position: absolute;
+  top: 10%;
+  right: 40%;
   @include responsive(s) {
     display: none;
   }
@@ -222,12 +227,22 @@ $container-s: 325px;
     display: none;
   }
 }
+
 .mais_1 {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+
   @include responsive(s) {
     display: none;
   }
 }
+
 .mais_2 {
+  position: absolute;
+  top: 82%;
+  right: 35%;
+
   @include responsive(s) {
     display: none;
   }
@@ -236,11 +251,17 @@ $container-s: 325px;
     display: none;
   }
 }
+
 .mais_3 {
+  position: absolute;
+  top: 75%;
+  left: 35%;
+
   @include responsive(s) {
     display: none;
   }
 }
+
 .mais_4 {
   @include responsive(s) {
     display: none;
@@ -305,7 +326,7 @@ $container-s: 325px;
 }
 
 .cronologia {
-  transform: translate3d(0,-120px,0);
+  padding-top: 0px;
 
   @include responsive(s) {
     display: none;
@@ -851,4 +872,10 @@ iframe {
   top: 86.5%;
   left: 40%;
   cursor: pointer;
+}
+
+.marcas-container {
+  @include responsive(s) {
+    padding: 0 0 16px 0;
+  }
 }

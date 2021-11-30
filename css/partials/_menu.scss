@@ -70,7 +70,65 @@ header {
   }
 }
 
-.navlink-desktop {
+.navlink-desktop-1 {
+  display: inline-block;
+  padding: 12px 16px;
+
+  position: relative;
+  font-weight: bold;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    transition: .3s ease;
+
+    bottom: 8px;
+    left: 14px;
+    width: 0%;
+    height: 2px;
+    border-radius: 8px;
+
+    background: $gradient-1;
+  }
+
+  &:hover {
+    color: $green-light-1;
+    &::after {
+      width: 65%;
+    }
+  }
+}
+
+.navlink-desktop-2 {
+  display: inline-block;
+  padding: 12px 16px;
+
+  position: relative;
+  font-weight: bold;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    transition: .3s ease;
+
+    bottom: 8px;
+    left: 14px;
+    width: 0%;
+    height: 2px;
+    border-radius: 8px;
+
+    background: $gradient-1;
+  }
+
+  &:hover {
+    color: $green-light-1;
+    &::after {
+      width: 75%;
+    }
+  }
+}
+
+.navlink-desktop-3 {
   display: inline-block;
   padding: 12px 16px;
 
@@ -95,6 +153,35 @@ header {
     color: $green-light-1;
     &::after {
       width: 80%;
+    }
+  }
+}
+
+.navlink-desktop-4 {
+  display: inline-block;
+  padding: 12px 16px;
+
+  position: relative;
+  font-weight: bold;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    transition: .3s ease;
+
+    bottom: 8px;
+    left: 14px;
+    width: 0%;
+    height: 2px;
+    border-radius: 8px;
+
+    background: $gradient-1;
+  }
+
+  &:hover {
+    color: $green-light-1;
+    &::after {
+      width: 72%;
     }
   }
 }

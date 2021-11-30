@@ -10,35 +10,40 @@ footer {
     font-weight: 500;
 }
 
-.footer-socials, .copyright {
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: $white;
+        opacity: 1;
+        font-size: 2.4rem;
+    }
+
+    li {
+        margin: 0 0 0 24px;
+    }
+}
+
+.copyright {
     display: flex;
     justify-content: center;
     align-items: center;
 
     li {
-        margin-left: 24px;
+        margin: 0 0 0 24px;
     }
 
     a {
         color: $white;
         opacity: 1;
-    }
-}
-
-.copyright {
-    a {
         font-size: 1.2rem;
     }
 
     p {
         font-size: 1.2rem;
         color: $white;
-    }
-}
-
-.footer-socials {
-    a {
-        font-size: 1.8rem;
     }
 }
 
@@ -49,7 +54,7 @@ footer {
 .social {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 
     border-top: 2px solid $green-medium;
 

@@ -331,7 +331,7 @@
 }
 
 .artmed {
-  margin-top: 144px;
+  padding-top: 0;
 }
 
 @media screen and (max-width: 960px) {
@@ -910,10 +910,8 @@ iframe {
 
 .jaleko {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 40%;
-  left: 13.5%;
+  top: 90%;
+  left: 3%;
   cursor: pointer;
 }
 
@@ -925,10 +923,8 @@ iframe {
 
 .editora {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 40%;
-  left: 27.2%;
+  top: 90%;
+  left: 20%;
   cursor: pointer;
 }
 
@@ -940,10 +936,8 @@ iframe {
 
 .artmed360 {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 40%;
-  left: 40.5%;
+  top: 90%;
+  left: 37%;
   cursor: pointer;
 }
 
@@ -955,10 +949,8 @@ iframe {
 
 .secad {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 40%;
-  left: 54.5%;
+  top: 90%;
+  left: 54%;
   cursor: pointer;
 }
 
@@ -970,10 +962,8 @@ iframe {
 
 .psi {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 40%;
-  left: 68%;
+  top: 90%;
+  left: 71.5%;
   cursor: pointer;
 }
 
@@ -985,10 +975,8 @@ iframe {
 
 .pos {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 40%;
-  left: 81%;
+  top: 90%;
+  left: 87.5%;
   cursor: pointer;
 }
 
@@ -1055,6 +1043,62 @@ iframe {
 @media screen and (max-width: 960px) {
   .marcas-container {
     padding: 0 0 16px 0;
+  }
+}
+
+.kiperman-container {
+  margin-top: 144px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .kiperman-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: -54px;
+  }
+}
+
+.maisaeduca {
+  width: 100%;
+  max-width: 140px;
+}
+
+@media screen and (max-width: 960px) {
+  .maisaeduca {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 220px;
+            flex: 1 1 220px;
+  }
+}
+
+.kiperman {
+  width: 100%;
+  max-width: 400px;
+}
+
+.kiperman-text {
+  width: 100%;
+  max-width: 650px;
+}
+
+@media screen and (max-width: 960px) {
+  .kiperman-text {
+    margin-bottom: 36px;
   }
 }
 
@@ -1277,6 +1321,24 @@ a:hover {
           transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
 }
 
+.btn-secondary {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 115%;
+  color: #161617;
+  border: 2px solid #81ECEC;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #81ECEC;
+}
+
 .m-1 {
   margin: 8px;
 }
@@ -1294,7 +1356,7 @@ a:hover {
 }
 
 .m-5 {
-  margin: 82px;
+  margin: 64px;
 }
 
 .mt-1 {
@@ -1314,7 +1376,7 @@ a:hover {
 }
 
 .mt-5 {
-  margin-top: 82px;
+  margin-top: 64px;
 }
 
 .mb-1 {
@@ -1334,7 +1396,7 @@ a:hover {
 }
 
 .mb-5 {
-  margin-bottom: 82px;
+  margin-bottom: 64px;
 }
 
 .mr-1 {
@@ -1354,7 +1416,7 @@ a:hover {
 }
 
 .mr-5 {
-  margin-right: 82px;
+  margin-right: 64px;
 }
 
 .ml-1 {
@@ -1374,7 +1436,7 @@ a:hover {
 }
 
 .ml-5 {
-  margin-left: 82px;
+  margin-left: 64px;
 }
 
 .mx-1 {
@@ -1398,8 +1460,8 @@ a:hover {
 }
 
 .mx-5 {
-  margin-left: 82px;
-  margin-right: 82px;
+  margin-left: 64px;
+  margin-right: 64px;
 }
 
 .my-1 {
@@ -1423,8 +1485,8 @@ a:hover {
 }
 
 .my-5 {
-  margin-top: 82px;
-  margin-bottom: 82px;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .p-1 {
@@ -1444,7 +1506,7 @@ a:hover {
 }
 
 .p-5 {
-  padding: 82px;
+  padding: 64px;
 }
 
 .pt-1 {
@@ -1464,7 +1526,7 @@ a:hover {
 }
 
 .pt-5 {
-  padding-top: 82px;
+  padding-top: 64px;
 }
 
 .pb-1 {
@@ -1484,7 +1546,7 @@ a:hover {
 }
 
 .pb-5 {
-  padding-bottom: 82px;
+  padding-bottom: 64px;
 }
 
 .pr-1 {
@@ -1504,7 +1566,7 @@ a:hover {
 }
 
 .pr-5 {
-  padding-right: 82px;
+  padding-right: 64px;
 }
 
 .pl-1 {
@@ -1524,7 +1586,7 @@ a:hover {
 }
 
 .pl-5 {
-  padding-left: 82px;
+  padding-left: 64px;
 }
 
 .px-1 {
@@ -1548,8 +1610,8 @@ a:hover {
 }
 
 .px-5 {
-  padding-left: 82px;
-  padding-right: 82px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 
 .py-1 {
@@ -1573,8 +1635,8 @@ a:hover {
 }
 
 .py-5 {
-  padding-top: 82px;
-  padding-bottom: 82px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 html {

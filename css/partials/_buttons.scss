@@ -59,3 +59,20 @@ a {
     transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
   }
 }
+
+.btn-secondary {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 115%;
+  color: $black-dark;
+  border: 2px solid $secondary-green;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: $secondary-green;
+  }
+}

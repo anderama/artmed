@@ -296,8 +296,7 @@ $container-s: 325px;
 }
 
 .artmed {
-  margin-top: 144px;
-
+  padding-top: 0;
   @include responsive(s) {
     margin: 0;
 
@@ -744,10 +743,8 @@ iframe {
 
 .jaleko {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 40%;
-  left: 13.5%;
+  top: 90%;
+  left: 3%;
   cursor: pointer;
 
   @include responsive(s) {
@@ -757,10 +754,8 @@ iframe {
 
 .editora {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 40%;
-  left: 27.2%;
+  top: 90%;
+  left: 20%;
   cursor: pointer;
 
   @include responsive(s) {
@@ -770,10 +765,8 @@ iframe {
 
 .artmed360 {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 40%;
-  left: 40.5%;
+  top: 90%;
+  left: 37%;
   cursor: pointer;
 
   @include responsive(s) {
@@ -783,10 +776,8 @@ iframe {
 
 .secad {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 40%;
-  left: 54.5%;
+  top: 90%;
+  left: 54%;
   cursor: pointer;
 
   @include responsive(s) {
@@ -796,10 +787,8 @@ iframe {
 
 .psi {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 40%;
-  left: 68%;
+  top: 90%;
+  left: 71.5%;
   cursor: pointer;
 
   @include responsive(s) {
@@ -809,10 +798,8 @@ iframe {
 
 .pos {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 40%;
-  left: 81%;
+  top: 90%;
+  left: 87.5%;
   cursor: pointer;
 
   @include responsive(s) {
@@ -877,5 +864,41 @@ iframe {
 .marcas-container {
   @include responsive(s) {
     padding: 0 0 16px 0;
+  }
+}
+
+.kiperman-container {
+  margin-top: 144px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include responsive(s) {
+    flex-direction: column;
+    margin-top: -54px;
+  }
+}
+
+.maisaeduca {
+  width: 100%;
+  max-width: 140px;
+
+  @include responsive(s) {
+    flex: 1 1 220px;
+  }
+}
+
+.kiperman {
+  width: 100%;
+  max-width: 400px;
+}
+
+.kiperman-text {
+  width: 100%;
+  max-width: 650px;
+
+  @include responsive(s) {
+    margin-bottom: 36px;
   }
 }
